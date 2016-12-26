@@ -22,7 +22,7 @@ public class ExceptionBean {
 		
 		//将e对象信息写入文件
 		try{
-			FileWriter fw = new FileWriter("\\E:\\logs\\NoteException\\mes_exception.log",true);
+			FileWriter fw = new FileWriter("\\E:\\logs\\mes_exception.log",true);
 			PrintWriter pw = new PrintWriter(fw);
 			
 			//获取异常发生时间
@@ -33,7 +33,7 @@ public class ExceptionBean {
 			pw.println("*************************************************************");
 			pw.println("**发生时间："+time);
 			pw.println("**异常类型："+e);
-			pw.println("**********************异常详情********************************");
+			pw.println("**********************异常详情**********************************");
 			e.printStackTrace(pw);//将异常栈信息写入文件
 			fw.close();
 			pw.close();
