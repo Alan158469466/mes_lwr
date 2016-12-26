@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面出错</title>
+		<link rel="stylesheet"  href="../css/error.css">
+		<link rel="stylesheet"  href="../css/cssReset.css">
+		
+		<script language="JavaScript">
+			function dosearch() {
+			var sf=document.searchform;
+			var submitto = sf.sengine.value + escape(sf.searchterms.value);
+			window.location.href = submitto;
+			return false;
+			}
+		</script>
+	</head>
+	<body>
+		
+		<div class="header">
+			
+		</div>
+		
+		<p class="error">500</p>
+		
+		<div class="content">
+			<h2>页面出错</h2>
+			
+			<p class="text">
+				抱歉！您的访问出错了，可能是服务器发生故障，您可以稍后重新访问或联系管理员进行解决。						
+			</p>
+				
+			<p class="links">
+				<a id="button" href="main">&larr; 返回主页</a> 
+			</p>	
+		</div>
+		
+	</body>
+</html>

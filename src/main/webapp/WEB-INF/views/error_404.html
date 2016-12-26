@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>页面未找到</title>
+		<link rel="stylesheet"  href="../css/error.css">
+		<link rel="stylesheet"  href="../css/cssReset.css">
+		
+		<script language="JavaScript">
+			function dosearch() {
+			var sf=document.searchform;
+			var submitto = sf.sengine.value + escape(sf.searchterms.value);
+			window.location.href = submitto;
+			return false;
+			}
+		</script>
+	</head>
+	<body>
+		
+		<div class="header">
+			
+		</div>
+		
+		<p class="error">404</p>
+		
+		<div class="content">
+			<h2>页面未找到</h2>
+			
+			<p class="text">
+				抱歉！您访问的页面未找到，可能是页面不存在或网络原因，在保证您的网络畅通的情况下，您可以尝试刷新或重新访问解决。						
+			</p>
+				
+			<p class="links">
+				<a id="button" href="main">&larr; 返回主页</a> 
+			</p>	
+		</div>
+		
+	</body>
+</html>
