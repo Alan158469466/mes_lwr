@@ -1,0 +1,23 @@
+body {	
+	font-family:"Microsoft Yahei";
+	font-size:12px;	
+    background:url(../images/backgrounds/building_bg.jpg);background-size:cover;background-attachment:fixed;height:100%;
+    }
+.box{
+	margin:0px auto;
+   	
+}
+.head{
+	width:100%;
+	height:250px;
+
+}
+.contenter{
+	margin:0px auto;
+    text-align:center;
+    font-size:50px;
+    color:#FFF;
+	width:850px;
+	height:200px;
+
+}

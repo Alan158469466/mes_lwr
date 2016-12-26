@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>login</title>
+
+<link rel="stylesheet" href="../deploy/css/login.css">
+</head>
+<body>
+
+<div class="login-container">
+<!-- 	<h1>Lithium battery production line MES</h1> -->
+	<h1>验证码功能未开通，请直接点击登录</h1>
+	<div class="connect">
+		<p></p>
+	</div>
+	
+	<form action="" method="POST" id="loginForm" accept-charset="UTF-8">
+		<div>
+			<input type="text" name="username" class="username" placeholder="体验用户名: tl" autocomplete="off"/>
+		</div>
+		<div>
+			<input type="password" name="password" class="password" placeholder="体验密码: 123" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<div>
+			<input type="text" name="verification" class="verification" placeholder="验证码" oncontextmenu="return false" onpaste="return false" readonly="readonly"
+			 style="width:74px;float:left;"/>
+			 <div class="code" >4e8d</div>
+			 <div class="change" ><a href="">换一张</a></div>
+		</div>
+		
+        <button id="submit" type="submit"> <a href="index.html"> 登录</a></button>
+	</form>
+
+	<a href="register.html">
+		<button type="button" class="register-tis">注册</button>
+	</a>
+
+</div>
+
+<script src="../deploy/js/jquery-3.1.1.min.js"></script>
+<script src="../deploy/js/login.js"></script>
+<!--表单验证-->
+<script src="../deploy/js/jquery.validate.min.js?var1.14.0"></script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>版权所有:Copyright 2016 东莞市天蓝智能装备有限公司 All rights reserved.</p>
+<p><a href="login_admin.html" class="admin" >后台登录</a></p>
+</div>
+</body>
+</html>
