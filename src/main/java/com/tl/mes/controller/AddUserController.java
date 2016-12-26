@@ -19,7 +19,7 @@ public class AddUserController {
 	private UserService userService;
 	
 	@ResponseBody
-	@RequestMapping("/adduser.do")
+	@RequestMapping("/user/add.do")
 	public Result addUser(String name,String password,String nick){
 //		String s = null;
 //		s.length();

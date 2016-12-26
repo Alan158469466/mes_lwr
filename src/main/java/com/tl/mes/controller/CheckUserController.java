@@ -20,7 +20,7 @@ public class CheckUserController {
 	@Resource
 	private UserService userService;
 	
-	@RequestMapping("/check.do")
+	@RequestMapping("/user/check.do")
 	@ResponseBody
 	public Result execute(String name){
 		Result result = userService.checkUser(name);

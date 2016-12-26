@@ -1,5 +1,7 @@
 package com.tl.mes.service;
 
+import java.security.NoSuchAlgorithmException;
+
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -35,12 +37,14 @@ public class UserServiceImpl implements UserService {
 
 	//添加用户
 	public Result addUser(String name, String password, String nick) {
-		User user = new User(Util.createUUID(),name,password,nick);
+		User user = null;
+		try {
+			user = new User(Util.createUUID(),name,Util.md5(password),nick);
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		}
 		Result result = new Result();
 		int row = dao.save(user);
-		
-//		String s = null;
-//		s.length();
 		
 		result.setMsg("插入数据成功");
 		result.setStatus(0);
