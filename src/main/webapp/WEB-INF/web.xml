@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
   <display-name>mes</display-name>
+  
        <welcome-file-list>
     	 <welcome-file>*/login.html</welcome-file>
   	   </welcome-file-list>  
@@ -57,10 +58,10 @@
 		<listener-class>
 			org.springframework.web.context.ContextLoaderListener
 		</listener-class>
-	</listener> 
+	</listener>   -->
 	<listener>
         <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
- 	</listener>   -->
+ 	</listener> 
 	<listener>
         <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
     </listener>
@@ -80,7 +81,7 @@
         <param-value>3000</param-value>    
     </context-param> 
 	
-	<!-- 配置异常跳转页面
+	<!-- 配置异常跳转页面  -->
 	<error-page>
 		<error-code>404</error-code>
 		<location>/WEB-INF/views/errorPage/error_404.html</location>
@@ -88,12 +89,12 @@
 	<error-page>
 		<error-code>500</error-code>
 		<location>/WEB-INF/views/errorPage/error_500.html</location>
-	</error-page>    -->
+	</error-page>  
 	
-	<!-- 配置session超时检查
+	<!-- 配置session超时检查 -->
 	<session-config>
   		<session-timeout>30</session-timeout>
-    </session-config>   -->
+    </session-config>  
   		
   
 </web-app>
